@@ -1,3 +1,7 @@
+![Static Build](https://github.com/silent1603/GameCollections/workflows/Build-Static/badge.svg)
+
+![Shared Build](https://github.com/silent1603/GameCollections/workflows/Build-Shared/badge.svg)
+
 ## Requirements
 
 * a modern C++17 compiler (`gcc-8`, `clang-6.0`, `MSVC 2017` or above)
