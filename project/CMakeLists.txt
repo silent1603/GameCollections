@@ -11,15 +11,13 @@ endif()
 #####################################
 # Define Targets
 #####################################
-add_subdirectory(hellolib)
-add_subdirectory(helloapp)
+add_subdirectory(PingPong)
 
 #####################################
 # Define Install Targets
 #####################################
 install(TARGETS
-  hellolib
-  helloapp
+  PingPong
   RUNTIME DESTINATION bin
   LIBRARY DESTINATION lib
   ARCHIVE DESTINATION lib
@@ -28,10 +26,10 @@ install(TARGETS
 
 install(
   FILES 
-    ${CMAKE_SOURCE_DIR}/project/hellolib/include/hellolib.h 
-    ${CMAKE_BINARY_DIR}/exports/hellolib_export.h
+    ${CMAKE_SOURCE_DIR}/project/TinyRenderer/include/TinyRenderer.h 
+    ${CMAKE_BINARY_DIR}/exports/TinyRenderer_export.h
   DESTINATION 
-    include/hellolib)
+    include/TinyRenderer)
 
 install(FILES  
   ${CMAKE_SOURCE_DIR}/LICENSE
